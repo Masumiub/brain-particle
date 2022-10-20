@@ -14,9 +14,11 @@ tsParticles.load("tsparticles", {
       bubble: {
         distance: 80,
         duration: 2,
-        opacity: 1,
-        color: "red",
-        size: 8
+        opacity: 0.5,
+        color: {
+          value: "rgb(200, 10, 73)"
+        },
+        size: 12
       }
 
         // repulse: {
