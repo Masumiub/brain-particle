@@ -3,22 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <title>Brain</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- sample from https://particles.matteobruni.it/#mask -->
-<!-- tsParticles container -->
-<div id="tsparticles"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white"  style="padding: 20px;">
+    <div class="container">
+      <i class="fa fa-mixcloud fa-2x" style="color: white;"></i>
+      <a class="navbar-brand" style="color:rgb(200, 10, 73); font-family: 'Montserrat' ;" href="#">SPARK THOUGHT</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="flex-row-reverse collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.wikipedia.org/">Results</a>
+          </li>
+
+          <li>
+            <button class="btn" style="border-radius: 90px; background-color:rgb(200, 10, 73); color: white " type="submit">CLIENT LOGIN</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
 
 
+<!--**********************-->
+<!--    header starts     -->
+<!--**********************-->
+<div class="box">
+  <!-- tsParticles container -->
+  <div id="tsparticles">
+
+<!-- <div class="herotext HeaderSectionText">
+
+  <h1 class="animate__animated animate__fadeInDownBig" style="font-weight: 600; color:rgb(27, 27, 27); font-family: 'Montserrat', sans-serif; ">Knowledge Management</h1>
+  <h1 class="animate__animated animate__fadeInDownBig" style="font-weight: 600; color:rgb(27, 27, 27); font-family: 'Montserrat', sans-serif; ">Consultancy</h1>
+  
+  <p>Striking an expart match between client Knowledge Management(KM)</p>
+  <p>needs and customised KM solutions</p>
+
+  <div class="animate__animated animate__fadeInUp" style="margin-top: 20px;">
+  <h5>LEARN MORE +</h5>
+  </div>
+  
+  </div> -->
+
+</div>
+
+</div>
+<!--**********************-->
+<!--    header ends     -->
+<!--**********************-->
+<!--
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.69 129.39"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.33px;}</style></defs><path class="cls-1" d="M5.83,46,11.92,65l12.43,8.66,4.19-2.16,10.8-4.32,2.7,4,4.07,7.23,10.81-15L46.38,53.5,46.21,45l-8.75-8.67L43.8,36l7,7.75,1,8.12L62.75,63.17,50,83.22l16.6,6.44,10.09,24.51L87.74,90l24.17,2.53,13.58-5.06-12,1.14,12.83-6.76-3.94-4.18-3.22,1.89-16.29,8.5-4.13-2.76L117.31,75,99.48,62.82,115.69,50l3.38,3.11-12.3,9.59,18.38,11.75,14.45-8.78,2-14.63.45-3.61-5.14-2-14.34,2.08.83-3.83,12.3-2.43-12-15.68-18.1,9.12-3.11-3.71L121,21.48,91,8.24,77.18,22.15l7.44,7.38L79.07,42.15l40.81.81-2,3.49-22.42-.08-21.94-1,6.8-15.68-8.75-7.09L87.05,6.48l-43.51,2L19.9,24.86S11.11,38.64,8.62,41.68s-7.13,1.13-7.13,1.13L14.4,22.35,41.52,2,88.77.17l36.36,16.71L149.51,47l-3.65,21-13.68,7.16,3.64,5.75L130.68,93.1l-17.56,4L92.72,95.6,76.84,129,60.35,93.2,46.58,88l-8.9-12L26.12,80.71,7.22,67.86l-7-22.4Zm61.91,22,8.65,31.38L94,62.55ZM49.48,15.13,39.35,27.56l3.78,2.3,6.49-8,14.19,7L58.54,40.6,70,54.45l2.84-4.06L63.4,39.31l5.81-12.56ZM11,45l6.56,16,8,7.26,5.7-2.68L22.33,56.6l-3-6.61,14.46-5.68L32.19,40,17.46,45.8l-1.35-4.73ZM93.13,58.63l5.63-10L81.1,55.29,70.16,61.61Z"/></svg>
+-->
 
 <!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/pathseg@1.2.0/pathseg.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/pathseg@1.2.0/pathseg.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js'></script><script  src="./script.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
