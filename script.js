@@ -1,4 +1,4 @@
-tsParticles.load("tsparticles", {
+tsParticles.load("brainparticles", {
   detectRetina: false,
   fpsLimit: 60,
   interactivity: {
@@ -6,7 +6,7 @@ tsParticles.load("tsparticles", {
     events: {
       onHover: {
         enable: true,
-        mode: "bubble"
+        mode: "bubble" // OnHover Effect
       },
       resize: true
     },
@@ -14,33 +14,26 @@ tsParticles.load("tsparticles", {
       bubble: {
         distance: 80,
         duration: 2,
-        opacity: 0.5,
+        opacity: 0.1, // OnHover Bubble Opacity
         color: {
-          value: "rgb(200, 10, 73)"
+          value: "rgb(200, 10, 73)" // OnHover Bubble Color 
         },
-        size: 12
+        size: 12 // OnHover Bubble Size
       }
-
-        // repulse: {
-        //   distance: 50,
-        //   duration: 3,
-        //   easing: "ease-out-back"
-        // }
-
     }
   },
   particles: {
     color: {
-      value: "#BCBCBC"
+      value: "#D6D6D6" // Particle Color
     },
     links: {
-      blink: false,
-      color: "#BCBCBC",
+      blink: true,
+      color: "#D6D6D6", // Line Color
       consent: false,
-      distance: 150,
+      distance: 150, 
       enable: true,
-      opacity: 1,
-      width: 1
+      opacity: 1, // Line Opacity
+      width: 0.7 // Line Width
     },
     move: {
       attract: {
@@ -61,15 +54,15 @@ tsParticles.load("tsparticles", {
     number: {
       density: {
         enable: false,
-        area: 800
+        area: 2000 // Particle Amount Value on Area
       },
       limit: 0,
-      value: 70
+      value: 43 // Particle Amount Value
     },
     opacity: {
       animation: {
         enable: false,
-        minimumValue: 0.05,
+        minimumValue: 0.5,
         speed: 2,
         sync: false
       },
@@ -77,7 +70,7 @@ tsParticles.load("tsparticles", {
       value: 1
     },
     shape: {
-      type: "circle"
+      type: "circle" // Particle Shape
     },
     size: {
       animation: {
@@ -87,25 +80,30 @@ tsParticles.load("tsparticles", {
         sync: false
       },
       random: false,
-      value: 3
+      value: 4 // Particle Size
     }
   },
   polygon: {
     draw: {
       enable: true,
       lineColor: "white",
-      lineWidth: 0.1
+      lineWidth: 1 // Polygon Shape Line Width
     },
     move: {
-      radius: 20
+      radius: 13.5  // Particle Movement Radius
     },
     position: {
       x: 30,
       y: 30
     },
     inlineArrangement: "equidistant",
-    scale: 5,
+    scale: 5, // Total Particle Brain Shape Scale (Change the value to scale the Brain Shape). 
     type: "inline",
-    data: `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 110.33" style="enable-background:new 0 0 122.88 110.33" xml:space="preserve"><g><path d="M5.83,46,11.92,65l12.43,8.66,4.19-2.16,10.8-4.32,2.7,4,4.07,7.23,10.81-15L46.38,53.5,46.21,45l-8.75-8.67L43.8,36l7,7.75,1,8.12L62.75,63.17,50,83.22l16.6,6.44,10.09,24.51L87.74,90l24.17,2.53,13.58-5.06-12,1.14,12.83-6.76-3.94-4.18-3.22,1.89-16.29,8.5-4.13-2.76L117.31,75,99.48,62.82,115.69,50l3.38,3.11-12.3,9.59,18.38,11.75,14.45-8.78,2-14.63.45-3.61-5.14-2-14.34,2.08.83-3.83,12.3-2.43-12-15.68-18.1,9.12-3.11-3.71L121,21.48,91,8.24,77.18,22.15l7.44,7.38L79.07,42.15l40.81.81-2,3.49-22.42-.08-21.94-1,6.8-15.68-8.75-7.09L87.05,6.48l-43.51,2L19.9,24.86S11.11,38.64,8.62,41.68s-7.13,1.13-7.13,1.13L14.4,22.35,41.52,2,88.77.17l36.36,16.71L149.51,47l-3.65,21-13.68,7.16,3.64,5.75L130.68,93.1l-17.56,4L92.72,95.6,76.84,129,60.35,93.2,46.58,88l-8.9-12L26.12,80.71,7.22,67.86l-7-22.4Zm61.91,22,8.65,31.38L94,62.55ZM49.48,15.13,39.35,27.56l3.78,2.3,6.49-8,14.19,7L58.54,40.6,70,54.45l2.84-4.06L63.4,39.31l5.81-12.56ZM11,45l6.56,16,8,7.26,5.7-2.68L22.33,56.6l-3-6.61,14.46-5.68L32.19,40,17.46,45.8l-1.35-4.73ZM93.13,58.63l5.63-10L81.1,55.29,70.16,61.61Z"/></g></svg>`
+    data: `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 110.33" style="enable-background:new 0 0 122.88 110.33" xml:space="preserve"><g><path d="M71.95,46.37l-18.62-1.04l5.78-16.38l-7.43-7.41L64.84,4.7 M120.14,43.33 M42.42,70.66 M0.15,38.61l5.93,19.01
+    l16.05,10.91l9.81-4.01l7.55,7.2l11.69,7.41l14,33.39L78.87,75.7h18h9l7-9l3.76-4.68l7.13-4.38l5.1-18.78l-22.7-24.53L75.3,0.16
+    L35.2,1.74L12.18,18.99L1.21,36.35c0,0,3.95,1.63,6.06-0.96 M39.09,6.87V21.7H16.87l-5,19 M80.95,60.7H48.87L25.62,35.8L11.87,49.7
+     M90.87,62.7l6-8l4.94-15.33l-9.94,3.33L80.95,22.45l6.84-2.66l5.07,9.92l12.48-4.62 M55.4,78.57l9.47,17.13l-3.05-2.73l3.05,10.73
+    l5-16 M90.87,68.7l-20,3v10 M47.87,68.7l11-2l6,7 M40.86,40.7l9.01-8l-7.45-3.24L30.87,31.7 M47.87,11.58l-3,11.12 M79.9,11.58
+    L67.07,22.7l7.8,15l4.04-1.91l6.96,15.91 M107.42,35.08l12.45,5.62l-19.24,28.32"/></g></svg>` // change the "d=" value here to change the brain shape.
   }
 });
