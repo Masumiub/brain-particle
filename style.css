@@ -37,3 +37,9 @@ canvas {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+.tsparticles-canvas-el{ 
+  margin-top: -150px; /*top-margin of the brain shape*/
+  min-height: 1000px; /*canvas height of brain shape*/
+}
