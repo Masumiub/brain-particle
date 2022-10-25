@@ -97,7 +97,7 @@ tsParticles.load("brainparticles", {
       y: 30
     },
     inlineArrangement: "equidistant",
-    scale: 4, // Total Particle Brain Shape Scale (Change the value to scale the Brain Shape). 
+    scale: 3, // Total Particle Brain Shape Scale (Change the value to scale the Brain Shape). 
     type: "inline",
     data: `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 110.33" style="enable-background:new 0 0 122.88 110.33" xml:space="preserve"><g><path d="M71.95,46.37l-18.62-1.04l5.78-16.38l-7.43-7.41L64.84,4.7 M120.14,43.33 M42.42,70.66 M0.15,38.61l5.93,19.01
     l16.05,10.91l9.81-4.01l7.55,7.2l11.69,7.41l14,33.39L78.87,75.7h18h9l7-9l3.76-4.68l7.13-4.38l5.1-18.78l-22.7-24.53L75.3,0.16
